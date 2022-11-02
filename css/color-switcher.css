@@ -1,0 +1,74 @@
+.color-switcher{
+    position: fixed;
+    right: 0;
+    top: 60px;
+    padding: 15px;
+    width: 200px;
+    border: 1px solid var(--bg-black-50);
+    background: var(--bg-black-100);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+}
+.color-switcher.open{
+    transform: translateX(-25px);
+}
+.color-switcher .s-icons{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    right: 100%;
+    margin-right: 25px;
+    border: 1px solid var(--bg-black-50);
+    background: var(--bg-black-100);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    color: var(--text-black-900);
+}
+.color-switcher .s-icons i{
+    line-height: 40px;
+}
+.color-switcher .color-switcher-toggler{
+    top: 0;
+}
+.color-switcher .day-night{
+    top: 55px;
+}
+.color-switcher h4{
+    margin: 0 0 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "clicker script";
+    color: var(--text-black-900);
+}
+.color-switcher .colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.color-switcher .colors span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.color-switcher .color-1{
+    background: #ec1839;
+}
+.color-switcher .color-2{
+    background: #fa5b0f;
+}
+.color-switcher .color-3{
+    background: #37b182;
+}
+.color-switcher .color-4{
+    background: #1854b4;
+}
+.color-switcher .color-5{
+    background: #f021b2;
+}
